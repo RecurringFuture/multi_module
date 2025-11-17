@@ -19,7 +19,7 @@ public class Song {
     private int id;
     @NonNull
     private String title;
-    private String author;
+    private String composer;
     private String key;
     private String tuning;
     private int capo;

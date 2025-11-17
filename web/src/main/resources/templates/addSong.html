@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns: th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+    <h1>Add Song</h1>
 
+    <form action="save" method="post">
+        <input id="title" type="text" placeholder="Title">
+        <input id="composer" type="text" placeholder="Composer">
+        <input id="key" type="text" placeholder="Key">
+        <input id="tuning" type="text" placeholder="Tuning">
+        <input id="tempo" type="number" min="0" max="500" placeholder="Tempo"><br>
+        <input id="capo" type="number" min="0" max="12" placeholder="Capo">
+        <input id="genre" type="text" placeholder="Genre">
+        <input id="duration" type="time" min="00:00:00" max="02:00:00"  placeholder="Duration">
+        <input id="state" type="number" min="0" max="2" placeholder="State">
+        <input id="threshold" type="number" min="0" max="6" placeholder="Threshold">
+        <input id="alert" type="checkbox" value="false" placeholder="Alert">
+        <input id="creation" type="date" placeholder="Creation">
+        <input id="modification" type="date" placeholder="Modification">
+        <input id="lastperformed" type="date" placeholder="LastPerformed"><br>
+        <input id="submit" type="submit" value="Save">
+    </form>
 </body>
 </html>
